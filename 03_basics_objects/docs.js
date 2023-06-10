@@ -49,3 +49,9 @@ function printID3(x) {
 }
 ;
 printID3(['paras', 'palak', 'dream']);
+function cords1(pt) { } //it’s common to want to use the same type more than once and refer to it by a single name.
+function cords2(pt) { }
+function cords3(pt) { }
+function cords4(pt) { }
+function cords5(pt) { }
+function cords6(pt) { }
