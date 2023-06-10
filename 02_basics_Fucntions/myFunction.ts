@@ -57,3 +57,4 @@ function consoleError(errMsg:string):void{                           //void mean
 function consoleError(errMsg:string):never{                           //NEVER means that the function throws an exception or terminates execution of the program.
      throw new Error(errMsg);
 }
+export {}
