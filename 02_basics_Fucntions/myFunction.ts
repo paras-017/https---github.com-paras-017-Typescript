@@ -27,7 +27,7 @@ loginUser('paras','paras@gmail.com')
 // }
 
 
-// const Hello = (val:string | number):string| number => {                            #multiple types
+// const Hello = (val:string | number) : string | number => {                            #multiple types
 //     return ``
 // }
 // console.log(Hello(1));
