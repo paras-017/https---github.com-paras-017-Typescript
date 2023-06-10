@@ -42,4 +42,38 @@ function printName2(obj:{first:string, last?:string}){
 // printName2({first:'John', last:'Doe'});
 
 
+
+// **************************Union Types**************************
+function printID(id:string | number){                                 //union typeis type formed from two or more types
+  return id
+}
+
+
+function printID2(id:string | number){
+  // return id.toUpperCase()             //TypeScript will only allow an operation if it is valid for every member of the union. For example, if you have the union string | number, you can’t use methods that are only available on string
+  if(typeof id === 'string')console.log(id.toUpperCase());      
+  else console.log(id);
+}
+
+function printID3(x: string[] | string){
+   if(Array.isArray(x)){
+    console.log(`hello ${x.join(' and ')}`);
+   }
+};
+printID3(['paras','palak','dream'])
+
+
+// ************************** Types Aliases**************************
+type Point = {    
+  x: number,
+  y: number
+}
+function cords1(pt:Point){}   //it’s common to want to use the same type more than once and refer to it by a single name.
+function cords2(pt:Point){}
+function cords3(pt:Point){}
+function cords4(pt:Point){}
+function cords5(pt:Point){}
+function cords6(pt:Point){}
+
+
 export {}
