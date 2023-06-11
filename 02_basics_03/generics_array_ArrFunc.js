@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function getSearchProduct(products) {
     return products[3];
 }
@@ -5,4 +7,3 @@ function getSearchProduct(products) {
 var getMoreProducts = function (products) {
     return products[3];
 };
-export {}
