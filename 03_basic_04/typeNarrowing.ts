@@ -18,7 +18,7 @@ const circle:Circle = {radius:5}
 console.log(calcArea(circle));
  */
 
-
+/*
 interface User{
     name: string,
     email: string;
@@ -34,4 +34,19 @@ function isAdminAccount(account: User | Admin){
         return account.isAdmin
     }
 }
+*/
+
+/*
+function logValue(x: Date | string){
+    if(x instanceof Date){                                      //instanceof can be used in new keyword like if its a class
+        console.log(x.getDay())
+    }else{
+        console.log(x.toLowerCase());
+    }
+
+}
+*/
+
+type fish = {swim(): void};
+type bird = {fly:()=> void};
 export {}
