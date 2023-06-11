@@ -1,3 +1,4 @@
+/*
 interface Circle {
     radius: number;
 }
@@ -15,5 +16,22 @@ function calcArea(shape: Circle | Rectangle): number {
 
 const circle:Circle = {radius:5}
 console.log(calcArea(circle));
+ */
 
+
+interface User{
+    name: string,
+    email: string;
+}
+interface Admin{
+    name: string,
+    email: string;
+    isAdmin: boolean;
+}
+
+function isAdminAccount(account: User | Admin){
+    if('isAdmin' in account){
+        return account.isAdmin
+    }
+}
 export {}
